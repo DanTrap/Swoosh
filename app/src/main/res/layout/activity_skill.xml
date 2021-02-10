@@ -7,7 +7,7 @@
     tools:context=".Controller.SkillActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/skillBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/beginnerballerbg" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/swooshLogo"
         android:layout_width="90dp"
         android:layout_height="30dp"
         android:layout_marginTop="24dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/skillText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -41,7 +41,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/swooshLogo" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -52,7 +52,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/skillText">
 
         <ToggleButton
             android:id="@+id/beginnerSkillButton"
@@ -95,7 +95,7 @@
         android:onClick="onSkillFinishClicked"
         android:text="@string/finish"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="@+id/skillBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
